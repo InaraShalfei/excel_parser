@@ -8,7 +8,7 @@ from .models import UserModel
 
 
 def parse_file(request):
-    df = pd.read_excel('/home/user/PycharmProjects/excel_parser/excel/test.xlsx')
+    df = pd.read_excel('/home/user/PycharmProjects/excel_parser/test.xlsx')
     df = df.replace(np.nan, None)
 
     for worker in df.to_dict('records'):
